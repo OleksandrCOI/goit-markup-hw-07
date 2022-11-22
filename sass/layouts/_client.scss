@@ -15,6 +15,10 @@
   width: 106px;
   height: 60px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .link-client:hover &,
+  .link-client:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .link-client {
@@ -27,15 +31,9 @@
   width: 170px;
   height: 92px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-client:hover,
-.link-client:focus {
-  border: 1px solid var(--accent-background-color);
-  border-radius: 4px;
-}
-
-.link-client:hover .link-icon,
-.link-client:focus .link-icon {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-background-color);
+    border-radius: 4px;
+  }
 }

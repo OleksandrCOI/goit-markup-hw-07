@@ -41,6 +41,10 @@
 
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .nav-portfolio {
@@ -52,6 +56,10 @@
 
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .emphasis::after {
@@ -74,15 +82,10 @@
 
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-studio:hover,
-.nav-portfolio:hover,
-.nav-contact:hover,
-.nav-studio:focus,
-.nav-portfolio:focus,
-.nav-contact:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* --- контакти --- */
@@ -122,6 +125,10 @@
   fill: var(--title-text-color);
   color: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .auth-mt:hover &,
+  .auth-mt:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .auth-icon-tel {
@@ -131,6 +138,10 @@
   margin-right: 10px;
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .auth-mt:hover &,
+  .auth-mt:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .auth-mt {
@@ -147,16 +158,8 @@
 
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.auth-mt:hover,
-.auth-mt:focus {
-  color: var(--accent-color);
-}
-
-.auth-mt:hover .auth-icon-mail,
-.auth-mt:focus .auth-icon-mail,
-.auth-mt:hover .auth-icon-tel,
-.auth-mt:focus .auth-icon-tel {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

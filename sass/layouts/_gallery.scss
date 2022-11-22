@@ -34,16 +34,15 @@
   color: var(--primary-text-color);
   background: var(--background-button-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-link:hover,
-.btn-link:focus {
-  color: var(--hero-text-color);
-  background: var(--accent-background-color);
-  /* padding: 6px 25px; */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: var(--hero-text-color);
+    background: var(--accent-background-color);
+    /* padding: 6px 25px; */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 /* --- галерея --- */
@@ -83,23 +82,18 @@
   /* margin-right: 0px; */
   /* padding: 0px; */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--background-color);
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 /* .gallery-list .item:nth-child(3n) { 
     margin-right: 0;
 }
 */
-
-.gallery-list .item:hover,
-.gallery-list .item:focus {
-  background: var(--background-color);
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.item:hover .item-top-text {
-  transform: translateY(0);
-}
 
 .img-text-container {
   position: relative;
@@ -121,4 +115,7 @@
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: rgba(33, 150, 243, 0.9);
+  .item:hover & {
+    transform: translateY(0);
+  }
 }

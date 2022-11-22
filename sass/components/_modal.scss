@@ -144,10 +144,41 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   position: relative;
-  .check-text > a {
+  & > a {
     color: #2196f3;
   }
+  /*? -----------TOGGLE----------- */
+  &::before {
+    content: "";
+    width: 40px;
+    height: 22px;
+    border-radius: 50px;
+    border: 1px solid red;
+    background: red;
+    margin-right: 8px;
+    transition: border-color 500ms linear, background-color 500ms linear;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 250ms linear, background-color 250ms linear;
+  }
+  .modal-checkbox:checked + &::after {
+    transform: translate(20px);
+    background-color: yellow;
+  }
+  .modal-checkbox:checked + &::before {
+    border-color: blue;
+    background: blue;
+  }
   /*? position: relative;TOGGLE ВИДАЛИТИ */
+  /*? ------------------------------------ */
 }
 
 /* .check-text::before {
@@ -189,36 +220,6 @@
 } -------todo*/
 
 /*? -----------TOGGLE----------- */
-
-.check-text::before {
-  content: "";
-  width: 40px;
-  height: 22px;
-  border-radius: 50px;
-  border: 1px solid red;
-  background: red;
-  margin-right: 8px;
-  transition: border-color 500ms linear, background-color 500ms linear;
-}
-.check-text::after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 3px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: black;
-  transition: transform 250ms linear, background-color 250ms linear;
-}
-.modal-checkbox:checked + .check-text:after {
-  transform: translate(20px);
-  background-color: yellow;
-}
-.modal-checkbox:checked + .check-text::before {
-  border-color: blue;
-  background: blue;
-}
 
 .check-icon {
   position: absolute;

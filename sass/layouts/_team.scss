@@ -62,12 +62,11 @@
   background-color: var(--background-color);
   fill: var(--icon-color);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-team:hover,
-.link-team:focus {
-  background-color: var(--accent-background-color);
-  fill: var(--hero-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-background-color);
+    fill: var(--hero-text-color);
+  }
 }
 
 .team-icon {

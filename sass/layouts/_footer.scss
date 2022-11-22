@@ -13,6 +13,10 @@
   margin-bottom: 20px;
   color: var(--hero-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .logo > .link-bottom {
@@ -26,13 +30,6 @@
 
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-bottom:hover,
-.logo-bottom:focus,
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
 }
 
 .bottom-list {
@@ -51,29 +48,26 @@
 
 .bottom-adress {
   color: var(--hero-text-color);
-}
-
-.bottom-adress:hover,
-.bottom-adress:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .bottom-mail {
   color: var(--post-tel-color);
-}
-
-.bottom-mail:hover,
-.bottom-mail:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .bottom-tel {
   color: var(--post-tel-color);
-}
-
-.bottom-tel:hover,
-.bottom-tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer {
@@ -118,11 +112,10 @@
   border-radius: 50%;
   fill: var(--hero-text-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.bottom-link-team:hover,
-.bottom-link-team:focus {
-  background-color: var(--accent-background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-background-color);
+  }
 }
 /* ---   підписка   --- */
 
@@ -153,10 +146,9 @@
   background-color: var(--background-footer);
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-input:focus {
-  border-color: var(--accent-background-color);
+  &:focus {
+    border-color: var(--accent-background-color);
+  }
 }
 
 .footer-button {
