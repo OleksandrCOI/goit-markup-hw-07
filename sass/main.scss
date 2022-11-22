@@ -1,0 +1,18 @@
+@import "./utils/vars";
+@import "./base/reset.scss";
+@import "./base/common";
+
+@import "./utils/hidden";
+
+@import "./components/container.scss";
+@import "./components/logo";
+@import "./components/modal";
+
+@import "./layouts/header.scss";
+@import "./layouts/hero.scss";
+@import "./layouts/features";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/client";
+@import "./layouts/footer";
+@import "./layouts/gallery";

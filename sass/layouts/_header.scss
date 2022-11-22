@@ -1,0 +1,162 @@
+/* --- Header --- */
+
+.top {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* --- навігація --- */
+
+.top-nav {
+  display: flex;
+  margin-left: 93px;
+}
+/* навігація */
+.top-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.top-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-studio {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-portfolio {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.emphasis::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.nav-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-studio:hover,
+.nav-portfolio:hover,
+.nav-contact:hover,
+.nav-studio:focus,
+.nav-portfolio:focus,
+.nav-contact:focus {
+  color: var(--accent-color);
+}
+
+/* --- контакти --- */
+
+.top-auth {
+  display: flex;
+  justify-items: baseline;
+  align-items: center;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.top-auth .item + .item {
+  margin-left: 30px;
+}
+
+.auth-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.auth-icon-mail {
+  width: 16px;
+  height: 12px;
+
+  margin-right: 10px;
+  fill: var(--title-text-color);
+  color: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-icon-tel {
+  width: 10px;
+  height: 16px;
+
+  margin-right: 10px;
+  fill: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-mt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-mt:hover,
+.auth-mt:focus {
+  color: var(--accent-color);
+}
+
+.auth-mt:hover .auth-icon-mail,
+.auth-mt:focus .auth-icon-mail,
+.auth-mt:hover .auth-icon-tel,
+.auth-mt:focus .auth-icon-tel {
+  fill: var(--accent-color);
+}
