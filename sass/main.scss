@@ -1,15 +1,15 @@
 @import "./utils/vars";
-@import "./base/reset.scss";
+@import "./base/reset";
 @import "./base/common";
 
 @import "./utils/hidden";
 
-@import "./components/container.scss";
+@import "./components/container";
 @import "./components/logo";
 @import "./components/modal";
 
-@import "./layouts/header.scss";
-@import "./layouts/hero.scss";
+@import "./layouts/header";
+@import "./layouts/hero";
 @import "./layouts/features";
 @import "./layouts/work";
 @import "./layouts/team";
