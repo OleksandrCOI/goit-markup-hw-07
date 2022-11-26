@@ -1,10 +1,5 @@
 /* --- герой --- */
 
-.hero__geometry {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -24,8 +19,9 @@
   background-color: #c4c4c4;
 }
 
-.title__geometry {
-  margin-bottom: 30px;
+.hero__geometry {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__title {
@@ -37,6 +33,10 @@
   color: var(--hero-text-color);
 
   text-transform: uppercase;
+}
+
+.title__geometry {
+  margin-bottom: 30px;
 }
 
 .hero__button {

@@ -404,12 +404,12 @@ body {
   color: var(--accent-color);
 }
 
-.menu__list {
-  margin-left: 93px;
-}
-
 .menu {
   display: flex;
+}
+
+.menu__geometry {
+  margin-left: 93px;
 }
 
 .menu .item:not(:last-child) {
@@ -444,7 +444,7 @@ body {
 }
 
 /* --- контакти --- */
-.connekt__list {
+.connekt__geometry {
   margin-left: auto;
 }
 
@@ -458,7 +458,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.connekt__list .item + .item {
+.connekt__geometry .connekt__item + .connekt__item {
   margin-left: 30px;
 }
 
@@ -516,11 +516,6 @@ body {
 }
 
 /* --- герой --- */
-.hero__geometry {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -535,8 +530,9 @@ body {
   background-color: #c4c4c4;
 }
 
-.title__geometry {
-  margin-bottom: 30px;
+.hero__geometry {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__title {
@@ -546,6 +542,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--hero-text-color);
   text-transform: uppercase;
+}
+
+.title__geometry {
+  margin-bottom: 30px;
 }
 
 .hero__button {
