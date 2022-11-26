@@ -548,7 +548,7 @@ body {
   text-transform: uppercase;
 }
 
-.button {
+.hero__button {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -565,35 +565,34 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
 }
-.button:hover, .button:focus {
+.hero__button:hover, .hero__button:focus {
   background: var(--accent-background-color);
 }
 
-.section-title {
+.section__features {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
+
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
-}
-
--features.section-features {
-  padding-top: 94px;
-  padding-bottom: 0px;
 }
 
 /* --- наші переваги --- */
-.features {
+.card-list {
   list-style: none;
   display: flex;
 }
 
-.features .item + .item {
+.card-list .card-list__item + .card-list__item {
   margin-left: 30px;
 }
 
-.features-container {
+.card-list__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -601,25 +600,31 @@ body {
   border-radius: 4px;
   width: 270px;
   height: 120px;
+}
+
+.container__geometry {
   margin-bottom: 30px;
 }
 
-.features-icon {
+.card-list__icon {
   width: 70px;
   height: 70px;
 }
 
-.features-title {
+.card-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+}
+
+.title__geometry {
   margin-bottom: 10px;
 }
 
-.item > .text {
+.card-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
